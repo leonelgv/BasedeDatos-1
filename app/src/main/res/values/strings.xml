@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Base de Datos Animales</string>
+    <string name="action_settings">Settings</string>
+    <string name="id">ID:</string>
+    <string name="nombre_comun">Nombre Común:</string>
+    <string name="nombre_cient">Nombre Científico:</string>
+    <string name="habitat">Habitat:</string>
+    <string name="caracteristicas">Características:</string>
+
+    <string name="guardar">GUARDAR</string>
+    <string name="eliminar">ELIMINAR</string>
+    <string name="buscar">BUSCAR</string>
+    <string name="editar">EDITAR</string>
+    <string name="limpiar">LIMPIAR</string>
+
+</resources>

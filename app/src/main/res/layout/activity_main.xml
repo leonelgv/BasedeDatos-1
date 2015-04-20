@@ -1,0 +1,139 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:measureAllChildren="false"
+    android:background="#fffbceff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:text="@string/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_id"
+            android:inputType="phone"
+            android:digits="1234567890"/>
+
+        <TextView
+            android:text="@string/nombre_comun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_nombre_comun"/>
+
+
+        <TextView
+            android:text="@string/nombre_cient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_nombre_cient" />
+
+
+        <TextView
+            android:text="@string/habitat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_habitat" />
+
+
+        <TextView
+        android:text="@string/caracteristicas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_caracteristicas" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/guardar"
+                android:id="@+id/btn_guardar"
+                android:onClick="guardar"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_menu_save" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/buscar"
+                android:id="@+id/btn_buscar"
+                android:onClick="busca"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_menu_search" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/eliminar"
+                android:id="@+id/btn_eliminar"
+                android:onClick="eliminar"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_menu_delete" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/editar"
+                android:id="@+id/btn_editar"
+                android:onClick="editar"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/ic_menu_edit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/limpiar"
+                android:id="@+id/btn_limpiar"
+                android:onClick="limpia"
+                android:layout_weight="1"
+                android:drawableLeft="@android:drawable/stat_notify_sync" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
